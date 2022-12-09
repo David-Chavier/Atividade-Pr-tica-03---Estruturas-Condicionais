@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP3Q6</title>
+</head>
+<body>
+    <script>
+        //         Pedro tem 1,50m de altura e cresce 2 centímetros por ano, enquanto
+        // Lucas tem 1,10m de altura e cresce 3 centímetros por ano.
+        // Construa um algoritmo que calcule e imprima quantos anos serão
+        // necessários para que:
+        // a. Lucas e Pedro tenham o mesmo tamanho;
+        // b. Lucas seja maior que Pedro.
+
+        let alturapedro = 1.50
+        let alturalucas = 1.10
+        let anos = 0
+
+        while(alturalucas <= alturapedro){
+            alturalucas += 0.03
+            alturapedro += 0.02
+            anos++
+        }
+
+
+        document.write(`Em ${anos} anos Lucas e Pedro terão o mesmo tamanho <br/>`)
+        document.write(`Em ${anos + 1} anos Lucas será maior que Pedro`)
+
+    </script>
+</body>
+</html>

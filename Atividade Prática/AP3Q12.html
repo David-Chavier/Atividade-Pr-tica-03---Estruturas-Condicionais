@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP3Q12</title>
+</head>
+<body>
+    <script>
+        //         Desenvolva um algoritmo que leia 10 números, calcule e escreva a
+        // média aritmética dos valores lidos, a quantidade de valores
+
+        // positivos, a quantidade de valores negativos e o percentual de
+        // valores negativos e positivos.
+
+        let dados = []
+        let contador = 0
+        let somadosdados = 0
+        let positivos = 0
+        let negativos = 0
+        
+        for(contador; contador < 10; contador++){
+           dados.push(parseInt(prompt('Insira um número!')))
+        }
+
+        for(let i = 0; i < dados.length; i++){
+            
+            if(dados[i] > 0){
+                positivos++
+            }else{
+                negativos++
+            }
+            somadosdados += dados[i] 
+        }
+
+        document.write(`Média aritmética dos valores lidos: ${somadosdados / dados.length}. <br/>`)
+        document.write(`Quantidade de valores positivos: ${positivos}. <br/>`)
+        document.write(`Quantidade de valores negativos: ${negativos}. <br/>`)
+        document.write(`Percentual de valores negativos e positivos: ${(negativos * 100) / dados.length}% negativos e ${(positivos * 100) / dados.length}% positivos.`)
+         
+    
+
+
+    </script>
+</body>
+</html>

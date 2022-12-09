@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP3Q8</title>
+</head>
+<body>
+    <script>
+        //         Escreva um algoritmo que faça a tabuada de um número e
+        // apresente o resultado de acordo com o modelo a seguir, sabendo
+        // que o multiplicando deverá ser fornecido pelo usuário (n) e a
+        // quantidade de iterações também (i).
+        // 1 * 2 = 2
+        // 2 * 2 = 4
+        // 3 * 2 = 6
+        // ...
+
+        const multiplicando = parseInt(prompt('Insira o múltiplicando.'))
+        const interaçoes = parseInt(prompt('Quantos operações exibir?'))
+
+        let contador = 0
+
+        for(contador; contador <= interaçoes; contador++){
+            document.write(`${contador} * ${multiplicando} = ${contador * multiplicando} <br/>`)
+        }
+
+    </script>
+</body>
+</html>

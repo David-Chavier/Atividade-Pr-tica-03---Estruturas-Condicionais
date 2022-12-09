@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP3Q9</title>
+</head>
+<body>
+    <script>
+        // Desenvolva um algoritmo que leia a altura de 15 pessoas. Este
+        // programa deverá calcular e mostrar:
+        // a. A menor altura do grupo;
+        // b. A maior altura do grupo;
+
+        let dados = []
+        let contador = 0
+
+        for(contador; contador < 15; contador++){
+           dados.push(parseInt(prompt('Insira à altura')))
+        }
+
+        document.write(`A menor altura do grupo: ${Math.min(...dados)} <br/>`)
+        document.write(`A maior altura do grupo: ${Math.max(...dados)}`)
+    </script>
+</body>
+</html>

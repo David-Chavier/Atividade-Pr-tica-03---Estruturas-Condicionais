@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP3Q11</title>
+</head>
+<body>
+    <script>
+        //         Desenvolva um algoritmo que mostre uma contagem regressiva de
+        // 30 até 1, marcando os números que forem primos, exatamente
+        // como mostrado abaixo:
+        // 30 [29] 28 27 26 25 24 [23] 22 21 20 [19] 18 [17] 16...
+
+        for(let contador = 30; contador >= 1; contador--){
+
+        if(primeNumber(contador)){
+            document.write(`[${contador}] <br/>`)
+
+        }else{
+            document.write(`${contador} <br/>`)
+
+        }
+        }
+
+        function primeNumber(contador) {
+            for (var divisor = 2; divisor < contador; divisor++) 
+            if (contador % divisor == 0) return false;
+            return true;
+        }
+
+    </script>
+</body>
+</html>
